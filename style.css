@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 1rem;
+}
+
+header {
+  background-color: #4666c0;
+  color: #fff;
+  text-shadow: 0 0 1px #333;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+header .recipe-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+header .recipe-title .link-to-home {
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+header .credit-text a {
+  color: rgb(0, 65, 90);
+}
+
+header .recipe-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+header .recipe-info img {
+  margin-bottom: 1rem;
+  width: 30%;
+  height: auto;
+  order: 1;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #333;
+}
+
+header .description {
+  text-align: center;
+  font-size: 1.3rem;
+  width: 50ch;
+}
+
+main {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+main table {
+  border-collapse: collapse;
+  border: 1px solid #333;
+  text-align: center;
+}
+
+main table caption,
+main table th,
+main table td {
+  border: 1px solid #333;
+  padding: 1rem;
+}
+
+main table caption {
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: #ccc;
+  border-bottom: 0;
+}
+
+.main-section .ingredients,
+.main-section .directions,
+main .index-nav {
+  background-color: #eee;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+}
+
+.main-section .ingredients h2,
+.main-section .directions h2,
+main .index-nav h2 {
+  font-size: 2rem;
+  background-color: #4666c0;
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}
+
+.main-section .ingredients > ul,
+.main-section .directions > ol,
+main .index-nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.3rem;
+  padding: 3rem;
+}
+
+main .index-nav {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  header .recipe-info {
+    flex-direction: column;
+  }
+
+  header .recipe-info .description {
+    width: 100%;
+  }
+
+  header .recipe-info img {
+    order: 0;
+    width: 50%;
+    margin-top: 2rem;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+}
