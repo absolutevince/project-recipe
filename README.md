@@ -1,4 +1,4 @@
 # project-recipe
 An Introduction to HTML project
 
-- The Odin Project
+project submitted to The Odin Project
